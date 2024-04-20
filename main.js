@@ -28,9 +28,6 @@ function processingSelectedFunction () {
 
 
 function factorial (number) { 
-    if (number === 0) { 
-        return 1; 
-    }
     for (let i = 1; i <= number; i++) { 
         number *= i; 
     }
