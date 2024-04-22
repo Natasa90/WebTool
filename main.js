@@ -28,15 +28,12 @@ function processingSelectedFunction () {
 
 
 function factorial (number) { 
-    if (number === 0 || n === 1) { 
-        return 1; 
-    } else {
     let sum = 1; 
     for (let i = 1; i <= number; i++) { 
         sum = sum * i; 
-        } return sum;                     
+        } 
+        return sum;                   
     } 
-}
 
 function reverseWord (word) { 
     return word.split("").reverse().join(""); 
