@@ -28,10 +28,14 @@ function processingSelectedFunction () {
 
 
 function factorial (number) { 
+    if (number === 0 || n === 1) { 
+        return 1; 
+    } else {
+    let sum = 1; 
     for (let i = 1; i <= number; i++) { 
-        number *= i; 
-    }
-    return number; 
+        sum = sum * i; 
+        } return sum;                     
+    } 
 }
 
 function reverseWord (word) { 

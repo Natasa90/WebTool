@@ -1,10 +1,9 @@
 body { 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    min-width: 1024px;
 }
 .container {
-    max-width: 40%;
+    max-width: 600px;
     text-align: center;
     border: 3px solid #113f67; 
     border-radius: 1rem;
@@ -13,26 +12,41 @@ body {
     color:#113f67
 }
 h1{
-    font-size: 2.5rem;
-    padding: 2rem 1rem;
+    font-size: 2rem;
+    padding: 1rem 1rem;
 }
-#dataBox, #selectFunc, button {
+#dataBox, #selectFunc {
     border-radius: 0.5rem;
-    font-size: 1.2rem;
+    padding: 0.3rem;
 }
 button{
     background-color: #a2a8d3;
+    border-radius: 0.5rem;
 }
 #outputArea{
-    width: 41rem;
-    padding: 2rem 0;
-    margin: 2rem 3.2rem;
-    border: 0.5px solid black;
+    margin: 2rem 3rem;
+    padding: 1.5rem;
+    border: 0.5px solid #113f67; 
     border-radius: 1rem;
     text-align: center;
-    justify-content: center;
     background-color: white;
+    font-weight: 700;
 }
-label{ 
-    font-size: 1.4rem;
+
+@media only screen and (max-width: 768px) { 
+    .container {
+        max-width: 80%;
+    }
+    #dataBox, #selectFunc, button {
+        margin: 0.5rem;
+    }
+    #label{
+        font-size: 0.3rem; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 90%;
+    }
 }
