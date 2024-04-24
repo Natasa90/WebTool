@@ -9,15 +9,15 @@
      <body>
         <div class="container">
             <h1>Multi-function Web Tool</h1>
-            <input type="text" id="dataBox" placeholder="Enter data">
+            <input type="text" spellcheck="false" id="dataBox" placeholder="Enter data">
             <label for="selectFunc">Choose function:</label>
             <select name="selectFunc" id="selectFunc">
                 <option value="factorial">Factorial</option>
-                <option value="reverseWord">Reverse Word</option>
-                <option value="uppercase">Uppercase</option>
-                <option value="loopDemo">Loop Demo</option>
+                <option value="reverseWordNumber">Reverse word/number</option>
+                <option value="uppercase">First words to upper case</option>
+                <option value="loopDemo">Loop demo</option>
              </select>
-            <button onclick=processingSelectedFunction()>Submit</button>
+            <button id="button" onclick=processingSelectedFunction()>Submit</button>
             <div id="outputArea"></div>
         </div>
         <script src="main.js"></script>  
